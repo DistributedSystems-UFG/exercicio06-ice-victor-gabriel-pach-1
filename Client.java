@@ -4,7 +4,7 @@ public class Client {
     public static void main(String[] args) {
         try (Communicator communicator = Util.initialize(args)) {
 
-            String serverIp = "SERVIDOR_PRIVATE_IP"; // <-- change this
+            String serverIp = "172.31.20.106"; // <-- change this
 
             // --- Printer object (talking to the Python server from Ex05) ---
             ObjectPrx base = communicator.stringToProxy(
